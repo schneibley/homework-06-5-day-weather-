@@ -8,8 +8,35 @@ header {
     color: #fff; 
     padding: 20px; 
     width: 100%; 
+    margin-bottom: 20px; 
     box-sizing: border-box; 
 }
 h1 {
     text-align: center;
+}
+
+.searchContainer {
+    width: 25%;
+    min-width: 200px; 
+    left: 0; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+
+#searchBox {
+    width: calc(100% - 80px); 
+    margin-right: 10px; 
+}
+#search-button {
+    width: 80px; 
+}
+
+
+.historySection {
+    
+}
+
+*{
+    border: 1px solid black;
 }
