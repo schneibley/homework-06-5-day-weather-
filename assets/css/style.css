@@ -1,0 +1,15 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background-color: blue;
+    color: #fff; 
+    padding: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+h1 {
+    text-align: center;
+}
