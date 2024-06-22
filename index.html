@@ -10,15 +10,24 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    
-    <form class="searchContainer">
-        <input type="text"id='searchBox' placeholder="search">
-        <button id="search-button">Search</button>
-        <section class="historySection"></section>
+
+    <form class="searchContainer" id="search-form">
+        <input type="text" id="searchBox" placeholder="Search">
+        <button id="search-button" type="submit">Search</button>
     </form>
 
+    <div class="current-weather">
+        <h2>City: <span id="city"></span></h2>
+        <h3 id="temp">Temperature: </h3>
+        <h3 id="wind">Wind: </h3>
+        <h3 id="humidity">Humidity: </h3>
+        
+    </div>
 
+    <div class="forecast-container">
+        <!-- Forecast data will be populated here -->
+    </div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
