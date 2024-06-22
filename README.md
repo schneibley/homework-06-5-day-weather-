@@ -26,6 +26,4 @@ Responsive Design: The webpage is designed to be responsive, adjusting to differ
 OpenWeatherMap: Providing weather data through their API.
 Icons: Weather icons sourced from OpenWeatherMap's icon collection.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
