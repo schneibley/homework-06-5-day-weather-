@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentWind = document.getElementById('wind');
     const currentHumidity = document.getElementById('humidity');
     const forecastContainer = document.querySelector('.forecast-container');
-    const searchHistory = document.querySelector('.historySection');
+    const searchHistory = document.getElementById('search-history');
 
     let cities = JSON.parse(localStorage.getItem('cities')) || [];
 
+    
     function updateSearchHistory(city) {
         if (!cities.includes(city)) {
             cities.push(city);
@@ -27,6 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
             searchHistory.appendChild(historyItem);
         }
     }
+
+    
+    cities.forEach(city => {
+        const historyItem = document.createElement('button');
+        historyItem.textContent = city;
+        historyItem.classList.add('history-item');
+        historyItem.addEventListener('click', () => {
+            userInput.value = city;
+            form.dispatchEvent(new Event('submit'));
+        });
+
+        searchHistory.appendChild(historyItem);
+    });
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();

@@ -22,7 +22,7 @@ h1 {
 }
 
 .search-container {
-    flex: 1 0 33%; /* Take 1/3 of the available space */
+    flex: 1 0 33%; 
     min-width: 200px;
     padding: 20px;
     box-sizing: border-box;
@@ -42,8 +42,7 @@ h1 {
 }
 
 .weather-forecast {
-    flex: 2 0 66%; /* Take 2/3 of the available space */
-    min-width: 400px;
+    flex: 2 0 66%; 
     padding: 10px;
     box-sizing: border-box;
 }
@@ -61,7 +60,7 @@ h1 {
 }
 
 .forecast-day {
-    flex: 1 0 calc(20% - 20px); /* Adjust according to your design */
+    flex: 1 0 calc(20% - 20px); 
     margin: 10px 0;
     padding: 10px;
     border: 2px solid blue;
@@ -70,4 +69,23 @@ h1 {
 .weather-icon {
     margin-top: 5px;
     display: block;
+}
+
+.history-section {
+    margin-top: 20px;
+}
+
+.search-history {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.history-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.search-history button {
+    margin: 5px;
 }
